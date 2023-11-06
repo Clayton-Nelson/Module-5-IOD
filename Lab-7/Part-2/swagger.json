@@ -1,0 +1,47 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "My Fake Store Project",
+    "description": "My User Project Application API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Store Paths",
+      "description": "API for fetching data for the cards"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/index/fetch": {
+      "get": {
+        "tags": ["Fetch Service"],
+        "summary": "Fetch data for cards",
+        "responses": {
+          "200": {
+            "description": "This service fetches the data from an external API"
+          }
+        }
+      }
+    },
+    "/index/sort": {
+      "get": {
+        "tags": ["Sort Service"],
+        "summary": "Sort category from data",
+        "responses": {
+          "200": {
+            "description": "This service sorts the data from an external API"
+          }
+        }
+      }
+    }
+  }
+}
